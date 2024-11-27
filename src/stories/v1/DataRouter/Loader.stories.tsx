@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Outlet, useLoaderData, useLocation, useRouteError } from 'react-router-dom';
+import { Link, Outlet, useLoaderData, useLocation, useRouteError } from 'react-router';
 import { withRouter } from '../../../features/decorator/withRouter';
 
 export default {

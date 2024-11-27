@@ -1,4 +1,4 @@
-import { ActionFunctionArgs, LoaderFunctionArgs, NavigationType, RouteMatch, useParams } from 'react-router-dom';
+import { ActionFunctionArgs, LoaderFunctionArgs, NavigationType, RouteMatch, useParams } from 'react-router';
 import { PromiseType } from 'utility-types';
 import { EVENTS } from '../../constants';
 import { getHumanReadableBody } from '../decorator/utils/getHumanReadableBody';

@@ -1,6 +1,6 @@
 import { addons } from '@storybook/preview-api';
 import React, { useRef } from 'react';
-import { RouteMatch, useLocation } from 'react-router-dom';
+import { RouteMatch, useLocation } from 'react-router';
 
 import { EVENTS } from '../../../constants';
 import { useDeepRouteMatches } from '../hooks/useDeepRouteMatches';

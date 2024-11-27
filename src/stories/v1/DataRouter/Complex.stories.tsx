@@ -14,7 +14,7 @@ import {
   useLoaderData,
   useNavigation,
   useParams,
-} from 'react-router-dom';
+} from 'react-router';
 import { withRouter } from '../../../features/decorator/withRouter';
 
 export default {

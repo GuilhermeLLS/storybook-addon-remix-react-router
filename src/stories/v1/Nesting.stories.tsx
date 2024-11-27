@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route, Routes, useParams } from 'react-router-dom';
+import { Link, Route, Routes, useParams } from 'react-router';
 import { withRouter } from '../../features/decorator/withRouter';
 
 export default {

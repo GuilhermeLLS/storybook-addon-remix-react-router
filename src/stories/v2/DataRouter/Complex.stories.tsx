@@ -14,7 +14,7 @@ import {
   useLoaderData,
   useNavigation,
   useParams,
-} from 'react-router-dom';
+} from 'react-router';
 import { reactRouterOutlet } from '../../../features/decorator/utils/routesHelpers/reactRouterOutlet';
 import { reactRouterParameters } from '../../../features/decorator/utils/routesHelpers/reactRouterParameters';
 import { withRouter } from '../../../features/decorator/withRouter';

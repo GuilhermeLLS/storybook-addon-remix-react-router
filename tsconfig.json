@@ -11,7 +11,7 @@
     "jsx": "react",
     "lib": ["es2020", "dom", "dom.iterable"],
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node", // I don't understand why, but this works https://stackoverflow.com/questions/78667530/react-ts2742-cannot-be-named-without-a-reference
     "noImplicitAny": true,
     "noUncheckedIndexedAccess": false,
     "rootDir": "./src",

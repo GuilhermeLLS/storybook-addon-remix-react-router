@@ -1,5 +1,5 @@
 import React from 'react';
-import { useFetcher } from 'react-router-dom';
+import { useFetcher } from 'react-router';
 import { reactRouterParameters } from '../../../features/decorator/utils/routesHelpers/reactRouterParameters';
 import { withRouter } from '../../../features/decorator/withRouter';
 

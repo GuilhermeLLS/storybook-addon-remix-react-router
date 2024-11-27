@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, useLocation, useMatches, useParams, useSearchParams } from 'react-router-dom';
+import { Outlet, useLocation, useMatches, useParams, useSearchParams } from 'react-router';
 import { withRouter } from '../../features/decorator/withRouter';
 
 export default {

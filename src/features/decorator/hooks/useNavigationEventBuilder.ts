@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useLocation, useNavigationType, useParams, useSearchParams } from 'react-router-dom';
+import { useLocation, useNavigationType, useParams, useSearchParams } from 'react-router';
 import { ValuesType } from 'utility-types';
 import { EVENTS } from '../../../constants';
 import type { RouterNavigationEvent, RouterNavigationEventName, RouteMatchesData } from '../../panel/types';

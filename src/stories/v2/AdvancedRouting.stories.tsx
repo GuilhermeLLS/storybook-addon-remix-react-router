@@ -1,6 +1,6 @@
 import { StoryObj } from '@storybook/react';
 import React, { useState } from 'react';
-import { Link, NavLink, Outlet, useLocation, useParams } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation, useParams } from 'react-router';
 import { reactRouterNestedAncestors } from '../../features/decorator/utils/routesHelpers/reactRouterNestedAncestors';
 import { reactRouterNestedOutlets } from '../../features/decorator/utils/routesHelpers/reactRouterNestedOutlets';
 import { reactRouterOutlet } from '../../features/decorator/utils/routesHelpers/reactRouterOutlet';

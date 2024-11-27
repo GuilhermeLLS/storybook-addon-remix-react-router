@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
-import { createMemoryRouter, RouteObject, RouterProvider } from 'react-router-dom';
+import { createMemoryRouter, RouteObject } from 'react-router';
+import { RouterProvider } from 'react-router/dom';
 import { useRouteObjectsDecorator } from '../hooks/useRouteObjectsDecorator';
 import { useStory } from '../hooks/useStory';
 
@@ -10,7 +11,7 @@ import { RouterLogger } from './RouterLogger';
 
 export function StoryRouter() {
   const { addonParameters = {} } = useStory();
-  const { hydrationData, routing, navigationHistory, location, future, fallback } = addonParameters;
+  const { hydrationData, routing, navigationHistory, location } = addonParameters;
 
   const decorateRouteObjects = useRouteObjectsDecorator();
 
@@ -27,31 +28,10 @@ export function StoryRouter() {
       hydrationData,
     };
 
-    if (future) {
-      resolvedOptions.future = future;
-    }
-
     return createMemoryRouter(injectedRoutes as RouteObject[], resolvedOptions);
-  }, [decorateRouteObjects, hydrationData, location, navigationHistory, routing, future]);
+  }, [decorateRouteObjects, hydrationData, location, navigationHistory, routing]);
 
   const expandProps: Record<string, unknown> = {};
-  const fallbackElement = fallback ?? <Fallback />;
-
-  if (future) {
-    expandProps.future = future;
-  }
-
-  if (future?.v7_partialHydration === true) {
-    expandProps.HydrateFallback = fallbackElement;
-  }
-
-  if (future?.v7_partialHydration === false) {
-    expandProps.fallbackElement = fallbackElement;
-  }
 
   return <RouterProvider router={memoryRouter} {...expandProps} />;
-}
-
-function Fallback() {
-  return <p>Performing initial data load</p>;
 }

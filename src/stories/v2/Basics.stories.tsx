@@ -1,6 +1,6 @@
 import { generatePath } from '@remix-run/router';
 import React, { useState } from 'react';
-import { Link, NavLink, Outlet, useLocation, useMatches, useParams, useSearchParams } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation, useMatches, useParams, useSearchParams } from 'react-router';
 import { reactRouterOutlet } from '../../features/decorator/utils/routesHelpers/reactRouterOutlet';
 import { reactRouterParameters } from '../../features/decorator/utils/routesHelpers/reactRouterParameters';
 import { withRouter } from '../../features/decorator/withRouter';
